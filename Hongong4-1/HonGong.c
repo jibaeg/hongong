@@ -36,6 +36,23 @@ int main(void)
 		res = !(a >= 30);
 		printf("!(a >= 30) : %d\n", res);
 	}
+	{
+		double a = 4.0, b = 1.2;
+
+		printf("%.1lf + %.1lf = %.1lf\n", a, b, a + b);
+		printf("%.1lf - %.1lf = %.1lf\n", a, b, a - b);
+		printf("%.1lf * %.1lf = %.1lf\n", a, b, a * b);
+		printf("%.1lf / %.1lf = %.1lf\n", a, b, a / b);
+	}
+	{
+		int kor = 3, eng = 5, mat = 4;
+		double kscore = 3.8, escore = 4.4, mscore = 3.9;
+		int credits = kor + eng + mat;
+		double grade = (kscore + escore + mscore) / 3.0;
+		int res = (credits >= 10 && grade > 4.0);
+		printf("%d", res);
+	}
+
 	return 0;
 
 }
